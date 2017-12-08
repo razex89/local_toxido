@@ -4,4 +4,6 @@ class CmdOutput(object):
         self._text = text
 
     def __repr__(self):
-        return self._text
+        if self._text:
+            return self._text
+        return ''

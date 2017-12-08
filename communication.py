@@ -8,7 +8,7 @@ class LocalCommunicator(SSLServer):
         self.set_timeout(seconds)
         ssl_sock = self.accept()
         tox_obj = ToxidoObject(ssl_sock)
-        tox_obj._logger.log("connected to a toxido!", tox_obj._logger.Level.INFO)
+        tox_obj._logger.info("connected to a toxido!")
         return tox_obj
 
 
